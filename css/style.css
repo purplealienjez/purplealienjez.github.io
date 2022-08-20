@@ -51,14 +51,14 @@ body {
   padding: 0;
   height: 100%;
   background-color: #404040;
-  color: black;
+  color: white;
   font-size: 18px;
 }
 
 .collapse {
   background-color: Transparent;
   background-repeat:no-repeat;
-  color: black;
+  color: white;
   border: none;
   outline: none;
   font-size: 18px;
@@ -71,8 +71,9 @@ body {
 
 .company {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.text9 {
@@ -81,7 +82,8 @@ body {
   margin-left: 100px;
   margin-bottom: 20px;
   max-width: 50%;
-  font-size: 16px;
+  font-size: 18px;
+  color: lightskyblue;
 }
 
 .home {
