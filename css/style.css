@@ -6,3 +6,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.columns {
+    display: flex;
+    height: 100vh;
+}
