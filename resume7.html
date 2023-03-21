@@ -4,35 +4,35 @@
 <head>
     <title>TwoBitSystems</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="device=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/bulma.css"> 
+    <link rel="stylesheet" href="css/style.css">   
+    <script src="javascript/menu.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-            </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    About
-                </a>
-                <a class="navbar-item" href="resume.html">
-                    Resume
-                </a>
-                <a class="navbar-item" href="contact.html">
-                    Contact
-                </a>
-            </div>
-            </div>
-        </nav>
+      <header>
+        <nav class="navbar is-info">
+          <div class="navbar-brand">
+              <a role="button" class="navbar-burger burger"
+              :class="{ 'is-active': isHamburgerOpen }"
+              @click="openHamburgerMenu"
+              data-target="navMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </a>
+          </div>
+          <div id="navMenu"
+              class="navbar-menu"
+              :class="{ 'is-active': isHamburgerOpen }">
+              <div class="navbar-end">
+                  <!-- menu content -->
+                  <a class="navbar-item" href="index.html">Home</a>
+                  <a class="navbar-item" href="resume.html">Resume</a>
+                  <a class="navbar-item" href="contact.html">Contact</a>
+              </div>
+          </div>
+      </nav>
     </header>
     <div class="columns is-mobile is-flex">
         <div class="column">      
